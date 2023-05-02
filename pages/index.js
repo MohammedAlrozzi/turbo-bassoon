@@ -8,7 +8,8 @@ export default function Home() {
       `https://api.toshl.com/me`,
       {
         headers: {
-          'Authorization': `Bearer ${token}`
+          'Authorization': `Bearer ${token}`,
+          'Access-Control-Allow-Origin': '*'
         }
       }
     );
